@@ -1,0 +1,17 @@
+Open Windows 11 -> Set IP Address -> Press Win + R -> Type ncpa.cpl -> open ethernet (R.C) -> Property -> IPV4 Address -> type :
+IP: 	     192.168.1.102
+Subnet mask: 255.255.255.0
+DNS: 	     192.168.1.101 (Server IP)
+
+click ok -> check ip address -> open terminal -> type: ipconfig -> type: ping <Server_ip> --> nslookup sunbeam.local
+
+Open File Explorer -> Right click This PC -> Properties -> Click Advanced System setting -> click Computer name -> change ->type:
+ name: WIN11
+ Domain: sunbeam.local
+	Credential : User: SUNBEAM\Administrator
+		     Password: <Your Server Password>
+
+Click ok -> Restart
+
+For Verify:
+Open windows Server 2025 - > Tools -> Active directorory Users and computer -> Sunbeam.local -> Computer -> Show WIN11
